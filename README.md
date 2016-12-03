@@ -32,6 +32,8 @@ nvm install 0.10.40 # Used for the CodeIt backend.
 nvm use node
 ```
 
+You will also need MongoDB, Meteor, and pymongo.
+
 ### Install the software
 Copy the `pr2.rosinstall` into the `src` directory of your catkin workspace, then run `wstool up -j8`.
 This downloads all of the code for Code3, plus some other stuff that is not strictly necessary (again, we hope to streamline this in the future).
@@ -54,6 +56,11 @@ The [RWS Wiki](https://github.com/hcrlab/rws/wiki) has instructions on how to co
 Make sure to build the frontend using `gulp`.
 As part of the .rosinstall file, you already downloaded some RWS apps.
 In this case, just configure the "RWS workspace" to be the same as your normal catkin workspace (`~/catkin_ws_indigo`).
+
+You will need to configure a "bringup file" for your robot.
+This can be a simulated robot.
+You also want to put nodes that multiple apps need.
+See [our bringup file](https://github.com/hcrlab/rws/blob/master/launch/rws.launch) as an example.
 
 ### Build the web frontends
 All of our web frontends are built with Polymer.
@@ -95,3 +102,24 @@ This is why we recommended using `nvm` to easily swap between versions of Node.
 You should have already installed an implementation of the CodeIt API for the PR2 (`code_it_pr2`).
 Support for the Fetch robot is forthcoming.
 You can also use CodeIt with the Turtlebot 2, see [code_it_turtlebot](https://github.com/hcrlab/code_it_turtlebot).
+
+## Running
+To run the system, start RWS by running `python development_server.py` (inside the RWS src directory).
+This should start the robot (or simulated robot) as configured in your RWS secrets.py.
+
+Next, start CustomLandmarks in its own terminal:
+```
+roslaunch rapid_perception object_search.launch --screen
+```
+
+Make sure to pass in `--screen`.
+When you create a custom landmark, this process will prompt you to type in a name via standard input.
+In the future, we hope to create a better interface for naming landmarks so that CustomLandmarks can be rolled into its own launch file.
+
+Run the PbD frontend, which includes a visualization of CustomLandmarks and PbD, with:
+```
+roslaunch pr2_pbd_interaction pbd_frontend.launch
+```
+
+Finally, click on the **PbD actions** app in the side menu to start CustomActions.
+Then, middle-click on the **CodeIt!** app to open CodeIt in a new tab.
