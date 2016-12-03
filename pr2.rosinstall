@@ -1,0 +1,43 @@
+- git:
+    local-name: agile_grasp
+    uri: git@github.com:jstnhuang/agile_grasp.git
+- git:
+    local-name: blinky
+    uri: git@github.com:hcrlab/blinky.git
+- git:
+    local-name: code_it
+    uri: git@github.com:hcrlab/code_it.git
+- git:
+    local-name: code_it_msgs
+    uri: git@github.com:hcrlab/code_it_msgs.git
+- git:
+    local-name: code_it_pr2
+    uri: git@github.com:hcrlab/code_it_pr2.git
+- git:
+    local-name: mongo_msg_db
+    uri: git@github.com:jstnhuang/mongo_msg_db.git
+- git:
+    local-name: mongo_msg_db_msgs
+    uri: git@github.com:jstnhuang/mongo_msg_db_msgs.git
+- git:
+    local-name: pr2_pbd
+    uri: git@github.com:PR2/pr2_pbd.git
+    version: indigo-devel
+- git:
+    local-name: rapid
+    uri: git@github.com:jstnhuang/rapid.git
+- git:
+    local-name: rws
+    uri: git@github.com:hcrlab/rws.git
+- git:
+    local-name: rws_pr2_dashboard
+    uri: git@github.com:hcrlab/rws_pr2_dashboard.git
+- git:
+    local-name: rws_landmarks
+    uri: git@github.com:jstnhuang/rws_landmarks.git
+- git:
+    local-name: rws_pr2_pbd
+    uri: git@github.com:hcrlab/rws_pr2_pbd.git
+- git:
+    local-name: rws_pr2_teleop
+    uri: git@github.com:hcrlab/rws_pr2_teleop.git
