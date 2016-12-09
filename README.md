@@ -1,5 +1,6 @@
 # Code3
 Code3 is a robot programming system for mobile manipulators.
+It currently runs on ROS Indigo for the PR2 and the Turtlebot.
 
 ## Installation
 Code3 consists of three components: CustomLandmarks, CustomActions, and CodeIt.
@@ -50,6 +51,9 @@ This should take a few minutes:
 ```
 catkin build
 ```
+
+If you get a bunch of gmock errors, then the system version of gmock doesn't match with the version of gmock expected by the [rapid](https://github.com/jstnhuang/rapid) library.
+See the rapid library's README to see how to install the latest version of gmock.
 
 ### Configure Robot Web Server (RWS)
 The [RWS Wiki](https://github.com/hcrlab/rws/wiki) has instructions on how to configure RWS.
