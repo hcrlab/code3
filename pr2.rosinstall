@@ -24,6 +24,10 @@
     uri: git@github.com:PR2/pr2_pbd.git
     version: indigo-devel
 - git:
+    local-name: pviz
+    uri: git@github.com:jstnhuang/pviz.git
+    version: indigo-devel
+- git:
     local-name: rapid
     uri: git@github.com:jstnhuang/rapid.git
 - git:
