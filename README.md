@@ -52,6 +52,11 @@ This should take a few minutes:
 catkin build
 ```
 
+#### Common build errors
+**MoveIt errors**:
+If you have a MoveIt-related build error, try installing all the available MoveIt packages with `sudo apt-get install ros-indigo-moveit-*`.
+
+**GMock errors**:
 If you get a bunch of gmock errors, then the system version of gmock doesn't match with the version of gmock expected by the [rapid](https://github.com/jstnhuang/rapid) library.
 See the rapid library's README to see how to install the latest version of gmock.
 
