@@ -6,7 +6,7 @@ git config --global url."https://".insteadOf git://
 echo "---------- Installing prereqs -------------------------------------------"
 . ~/.bashrc
 sudo apt-get install -y python-wstool python-catkin-tools
-sudo apt-get install -y libgif-dev
+sudo apt-get install -y libgif-dev curl
 sudo apt-get install -y ros-indigo-moveit-*
 
 echo "---------- Installing gmock ---------------------------------------------"
