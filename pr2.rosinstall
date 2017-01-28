@@ -1,7 +1,4 @@
 - git:
-    local-name: agile_grasp
-    uri: git@github.com:jstnhuang/agile_grasp.git
-- git:
     local-name: blinky
     uri: git@github.com:hcrlab/blinky.git
 - git:
@@ -45,3 +42,6 @@
 - git:
     local-name: rws_pr2_teleop
     uri: git@github.com:hcrlab/rws_pr2_teleop.git
+- git:
+    local-name: stf
+    uri: git@github.com:jstnhuang/stf.git
