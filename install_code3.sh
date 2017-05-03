@@ -58,7 +58,7 @@ echo "---------- Installing frontend prereqs ----------------------------------"
 nvm use node
 npm install -g yo bower gulp grunt-cli polymer-cli generator-polymer
 
- Build frontends
+# Build frontends
 echo "---------- Building blinky frontend -------------------------------------"
 cd ~/catkin_ws_indigo/src/blinky/frontend/
 bower install && npm install
